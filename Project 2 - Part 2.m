@@ -1,0 +1,11 @@
+inputImage = imread('KulkarniGray.jpg');
+histogramEq = histeq(inputImage, 256);
+figure;
+subplot(2, 2, 1);
+imshow(inputImage);
+subplot(2, 2, 2);
+bar(imhist(inputImage));
+subplot(2, 2, 3);
+imshow(histogramEq);
+subplot(2, 2, 4);
+bar(imhist(histogramEq));
